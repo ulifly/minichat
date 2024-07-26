@@ -1,4 +1,8 @@
-const socket = io();
+const socket = io({
+  auth: {
+    serverOffset: 0
+  }
+});
 
 const form = document.getElementById('form');
 const input = document.getElementById('input');
